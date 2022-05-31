@@ -13,6 +13,8 @@ After processing and joining operations, I write the wide tables into ElasticSea
 ![dashboard](dashboard.png)
 
 To interact with a front-end that supports ad-hoc queries and visualization, I write a data interface using SpringBoot.
+![dau](dau_realtime.png)
+![adhoc](adhoc.png)
 
 # Built with
 - Spark-Streaming

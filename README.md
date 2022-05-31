@@ -25,3 +25,8 @@ To interact with a front-end that supports ad-hoc queries and visualization, I w
 - ElasticSearch
 - Kibana
 - SpringBoot
+
+# Notes
+- "Exact-Once" consumption of Kafka topics: implemented through "At-least Once" consumption (may have duplicates), together with idempotent writes into ES. I chose to maintain consumer offsets in Redis (OffsetsUtils.scala).
+- Reduce the number of connections (and other resources) by using "foreachPartition" and pay special attention on where the codes are executed (i.e., on driver or on executor).
+- Use "fullOuterJoin" to prevent data loss when joining two streams. When two streams are out-of-sync, store one of them in Redis temporarily and wait for the other stream (DwdOrderApp.scala)

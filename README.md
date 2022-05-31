@@ -10,7 +10,7 @@ I split the log data flow into 5 topics based on the data types and write them b
 At this stage, Redis can be considered as the DIM layer and the processed data in Kafka can be considered as the DWD layer.
 
 After processing and joining operations, I write the wide tables into ElasticSearch (OLAP) and use Kibana as a simple BI tool for visualization and creating dashboards.
-[[https://github.com/pseudopochen/spark_streaming_realtime/blob/master/dashboard.png|alt=dashboard]]
+![dashboard](dashboard.png)
 
 To interact with a front-end that supports ad-hoc queries and visualization, I write a data interface using SpringBoot.
 

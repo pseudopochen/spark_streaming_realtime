@@ -1,0 +1,28 @@
+package utils
+
+object Config {
+  val KAFKA_BOOTSTRAP_SERVERS = "kafka.bootstrap-servers"
+
+  val REDIS_HOST = "redis.host"
+  val REDIS_PORT = "redis.port"
+
+  val SPARK_CONF_MASTER = "local[*]"
+
+  val MOCK_BASE_LOG_TOPIC = "ODS_BASE_LOG"
+  val MOCK_BASE_DB_TOPIC = "ODS_BASE_DB"
+
+  val BASE_LOG_CONSUMER_GROUP = "ODS_BASE_LOG_GROUP"
+  val BASE_DB_CONSUMER_GROUP = "ODS_BASE_DB_GROUP"
+
+  val DWD_PAGE_LOG_TOPIC = "DWD_PAGE_LOG_TOPIC"
+  val DWD_PAGE_DISPLAY_TOPIC = "DWD_PAGE_DISPLAY_TOPIC"
+  val DWD_PAGE_ACTION_TOPIC = "DWD_PAGE_ACTION_TOPIC"
+  val DWD_START_LOG_TOPIC = "DWD_START_LOG_TOPIC"
+  val DWD_ERROR_LOG_TOPIC = "DWD_ERROR_LOG_TOPIC"
+
+  val DWD_DAU_GROUP = "DWD_DAU_GROUP"
+
+  val ES_HOST = "es.host"
+  val ES_PORT = "es.port"
+
+}
